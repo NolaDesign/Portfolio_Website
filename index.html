@@ -1,0 +1,3844 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nola Krijnen — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="page-outer-frame">
+
+    <div class="bg-pattern"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+      <a
+        href="#home"
+        class="brand-mini"
+        data-target="view-home"
+      >
+        <img
+          src="images/logo_transparent.png"
+          alt="NOLA DESIGN Logo"
+          class="brand-mini-logo"
+        >
+
+        <span>NOLA DESIGN</span>
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="mobile-menu-toggle"
+        aria-label="Menu openen"
+      >
+        ☰
+      </button>
+
+
+      <nav>
+
+        <ul class="nav-links">
+
+          <li>
+            <button
+              class="nav-btn active"
+              data-target="view-home"
+            >
+              Home
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="nav-btn"
+              data-target="view-projects"
+            >
+              Projecten
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="nav-btn"
+              data-target="view-about"
+            >
+              Over mij
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="nav-btn"
+              data-target="view-contact"
+            >
+              Contact
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+
+    <section
+      id="view-home"
+      class="view-section active"
+    >
+
+      <div class="hero-container">
+
+        <div class="logo-wrapper">
+
+          <img
+            src="images/logo_transparent.png"
+            alt="NOLA DESIGN Logo"
+            class="hero-logo-img"
+          >
+
+        </div>
+
+
+        <div class="home-teaser-strip">
+
+          <div class="home-teaser-header">
+
+            <h3>
+              Uitgelicht Werk
+            </h3>
+
+
+            <button
+              class="btn-pill btn-green small-btn"
+              data-target="view-projects"
+            >
+              Bekijk Alle Projecten →
+            </button>
+
+          </div>
+
+
+          <div
+            id="featured-stickers-board"
+            class="featured-stickers-board"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTEN -->
+
+    <section
+      id="view-projects"
+      class="view-section"
+    >
+
+      <div class="section-header-bar">
+
+        <button
+          class="btn-back"
+          data-back-to="view-home"
+        >
+          ←
+        </button>
+
+
+        <h2 class="section-title">
+          Projecten
+        </h2>
+
+      </div>
+
+
+      <div
+        id="projects-grid"
+        class="projects-grid"
+      ></div>
+
+    </section>
+
+
+    <!-- PROJECT DETAIL -->
+
+    <section
+      id="view-project-detail"
+      class="view-section"
+    >
+
+      <div class="section-header-bar">
+
+        <button
+          class="btn-back"
+          data-back-to="view-projects"
+        >
+          ←
+        </button>
+
+
+        <h2
+          id="detail-project-title"
+          class="section-title"
+        >
+          Project
+        </h2>
+
+      </div>
+
+
+      <div class="project-detail-container">
+
+        <div class="project-detail-layout">
+
+          <div class="detail-visual-column">
+
+            <div
+              id="detail-collage-stage"
+              class="detail-collage-stage"
+            ></div>
+
+          </div>
+
+
+          <div class="detail-text-column">
+
+            <div class="detail-badge-row">
+
+              <span
+                id="detail-project-badge"
+                class="detail-badge"
+              ></span>
+
+
+              <span
+                id="detail-project-year"
+                class="detail-badge"
+              ></span>
+
+            </div>
+
+
+            <p
+              id="detail-project-lead"
+              class="detail-lead"
+            ></p>
+
+
+            <div
+              id="detail-project-desc"
+              class="detail-body-text"
+            ></div>
+
+
+            <div class="detail-meta-box">
+
+              <div class="meta-row">
+
+                <span class="meta-label">
+                  Context:
+                </span>
+
+
+                <span
+                  id="detail-project-context"
+                  class="meta-value"
+                ></span>
+
+              </div>
+
+
+              <div class="meta-row">
+
+                <span class="meta-label">
+                  Technieken:
+                </span>
+
+
+                <span
+                  id="detail-project-tools"
+                  class="meta-value"
+                ></span>
+
+              </div>
+
+            </div>
+
+
+            <div class="detail-actions">
+
+              <button
+                class="btn-pill btn-cream"
+                data-target="view-projects"
+              >
+                ← Terug naar Projecten
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- OVER MIJ -->
+
+    <section
+      id="view-about"
+      class="view-section"
+    >
+
+      <div class="section-header-bar">
+
+        <button
+          class="btn-back"
+          data-back-to="view-home"
+        >
+          ←
+        </button>
+
+
+        <h2 class="section-title">
+          Over mij
+        </h2>
+
+      </div>
+
+
+      <div class="retro-card">
+
+        <div class="about-layout">
+
+          <div class="about-text-column">
+
+            <h3 class="about-intro-title">
+              Nola Krijnen ✦
+            </h3>
+
+
+            <p class="about-paragraph">
+              Ik ben Nola Krijnen,
+            </p>
+
+
+            <p class="about-paragraph">
+              Ik werk op een breed vlak. Of het nou grafisch, fysiek of met video is, ik kijk vooral
+              naar wat het beste past bij de opdracht. Ik vind het leuk om verschillende soorten projecten
+              te doen, van branding en visuele identiteiten tot werk rondom maatschappelijke onderwerpen.
+            </p>
+
+
+            <p class="about-paragraph">
+              Voor mij begint een goed ontwerp bij een sterk concept. Ik ben daarom niet alleen bezig met
+              iets moois maken, maar vooral met het maken van werk dat betekenis heeft.
+            </p>
+
+
+            <div class="skills-section">
+
+              <h4 class="skills-title">
+                Wat ik graag doe
+              </h4>
+
+
+              <div class="skills-pills">
+
+                <span class="skill-pill">
+                  activistisch design
+                </span>
+
+                <span class="skill-pill">
+                  Visual Identity & branding
+                </span>
+
+                <span class="skill-pill">
+                  Verpakkingsontwerp
+                </span>
+
+                <span class="skill-pill">
+                  Fotografie & Film
+                </span>
+
+                <span class="skill-pill">
+                  analoog & digitaal
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="about-contact-btn">
+
+              <button
+                class="btn-pill btn-pink"
+                data-target="view-contact"
+              >
+                Stuur me een berichtje! →
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="about-collage-stage">
+
+            <div class="polaroid-frame">
+
+              <div class="tape-accent"></div>
+
+
+              <img
+                src="images/over mij.jpeg"
+                alt="Nola Krijnen"
+                class="polaroid-img"
+              >
+
+
+              <div class="polaroid-note">
+                Nola Krijnen
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+      id="view-contact"
+      class="view-section"
+    >
+
+      <div class="section-header-bar">
+
+        <button
+          class="btn-back"
+          data-back-to="view-home"
+        >
+          ←
+        </button>
+
+
+        <h2 class="section-title">
+          Contact
+        </h2>
+
+      </div>
+
+
+      <div class="retro-card">
+
+        <div class="contact-layout">
+
+          <div class="contact-info-column">
+
+            <div class="contact-info-card">
+
+              <h4>
+                Laten we samenwerken! 💌
+              </h4>
+
+
+              <p>
+                Heb je een toffe opdracht, wil je overleggen over een stageplek of gewoon even sparren
+                over ontwerp? Neem gerust contact met me op!
+              </p>
+
+
+              <ul class="contact-list">
+
+                <li>
+
+                  <span class="contact-icon-pill">
+                    ✉️
+                  </span>
+
+
+                  <span>
+
+                    <strong>
+                      E-mail:
+                    </strong>
+
+
+                    <a
+                      href="mailto:nolakrijnen1@gmail.com"
+                      class="contact-link"
+                    >
+                      nolakrijnen1@gmail.com
+                    </a>
+
+                  </span>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-form-column">
+
+            <h3 class="contact-form-title">
+              Stuur een bericht
+            </h3>
+
+
+            <form id="portfolio-contact-form">
+
+              <div class="form-group">
+
+                <label
+                  for="contact-name"
+                  class="form-label"
+                >
+                  Naam *
+                </label>
+
+
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="form-input"
+                  placeholder="Je naam of organisatie"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label
+                  for="contact-email"
+                  class="form-label"
+                >
+                  E-mailadres *
+                </label>
+
+
+                <input
+                  type="email"
+                  id="contact-email"
+                  class="form-input"
+                  placeholder="jouw.email@domein.nl"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label
+                  for="contact-subject"
+                  class="form-label"
+                >
+                  Onderwerp
+                </label>
+
+
+                <input
+                  type="text"
+                  id="contact-subject"
+                  class="form-input"
+                  placeholder="Bijv. Stage / Samenwerking / Vraag"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label
+                  for="contact-message"
+                  class="form-label"
+                >
+                  Bericht *
+                </label>
+
+
+                <textarea
+                  id="contact-message"
+                  class="form-textarea"
+                  placeholder="Typ hier je bericht..."
+                  required
+                ></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn-pill btn-mint form-submit"
+              >
+                Verstuur Bericht
+              </button>
+
+
+              <div
+                id="form-success-msg"
+                class="form-success-message"
+              >
+                🎉 Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+
+    <div
+      id="lightbox-modal"
+      class="modal-overlay"
+    >
+
+      <div class="modal-content">
+
+        <button
+          class="modal-close-btn"
+          type="button"
+          aria-label="Sluiten"
+        >
+          ✕
+        </button>
+
+
+        <img
+          id="lightbox-img"
+          src=""
+          alt="Vergrote afbeelding"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+<script>
+
+const PROJECTS_DATA = [
+
+  /* PROJECT 1 */
+
+  {
+    id:
+      'clear-conscience',
+
+    title:
+      'Clear Conscience?',
+
+    subtitle:
+      'Analoge & Digitale Collage Vleesindustrie',
+
+    category:
+      'activistisch design',
+
+    mainImage:
+      'images/project 1/hoofdfoto.png',
+
+    lead:
+      'Aandacht voor de keerzijde van de vleesindustrie door middel van rauwe, confronterende beelden en de vraag “Clear conscience?”.',
+
+    description:
+`Voor dit project ontwierp ik een poster waarmee ik aandacht vraag voor de keerzijde van de vleesindustrie. Met confronterende beelden en de vraag “Clear conscience?” wil ik mensen laten stilstaan bij iets waar vaak nauwelijks over wordt nagedacht: wat er voorafgaat aan het stukje vlees op je bord.
+
+Tijdens het ontwerpproces heb ik verschillende concepten en technieken getest. Uiteindelijk koos ik ervoor om de achtergrond met de hand te maken, waardoor een rauw, gescheurd en onrustig effect ontstond dat goed aansluit bij het onderwerp. Het logo en de typografie heb ik digitaal ontworpen en vervolgens gecombineerd met het handgemaakte beeld.
+
+Dit project past goed bij hoe ik graag ontwerp. Ik vind het interessant om mijn werk niet alleen visueel aantrekkelijk te maken, maar er ook iets mee te zeggen. Door maatschappelijke onderwerpen in mijn ontwerpen te verwerken, kan ik mijn werk inzetten om een statement te maken en mensen aan het denken te zetten.`,
+
+    context:
+      'CMD Avans Breda • Beeldmanipulatie & Collage',
+
+    year:
+      '2025',
+
+    tools:
+      'Analoge collagetechniek, Handgescheurd papier, Digitaal logo, Adobe Illustrator, Adobe Photoshop',
+
+    images: [
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 1/hoofdfoto.png',
+
+        caption:
+          'Clear Conscience?'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 1/digitaal_logo.png',
+
+        caption:
+          'Digitaal logo'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 1/IMG_3136.jpg',
+
+        caption:
+          'Detail'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 1/IMG_3137.jpg',
+
+        caption:
+          'Detail'
+      }
+
+    ]
+  },
+
+
+  /* PROJECT 2 */
+
+  {
+    id:
+      'barbie-box',
+
+    title:
+      'In a Barbie world',
+
+    subtitle:
+      'Do you fit in this world?',
+
+    category:
+      'activistisch design',
+
+    mainImage:
+      'images/project 2/hoofdfoto.png',
+
+    lead:
+      'Een statement tegen het onrealistische schoonheidsideaal dat we al van jongs af aan meekrijgen door onder andere Barbie.',
+
+    description:
+`Met "In a Barbie world" maak ik een statement tegen het onrealistische schoonheidsideaal dat we al van jongs af aan meekrijgen door onder andere Barbie. Door een levensgrote Barbiebox te maken met daarin de uitgesneden vorm van een Barbie-lichaam, laat ik zien hoe mensen letterlijk en figuurlijk in een hokje worden geduwd. Verschillende mensen namen plaats in de box, maar pasten niet door de "perfecte" lichaamsvorm heen. Dat beeld maakt zichtbaar hoe absurd het is dat ons wordt aangeleerd dat we moeten voldoen aan een opgelegd ideaal.`,
+
+    context:
+      'CMD Avans Breda • Vormgeving, Concept & Fotografie',
+
+    year:
+      '2026',
+
+    tools:
+      'Fysiek, Fotografie, Adobe Photoshop',
+
+    images: [
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 2/hoofdfoto.png',
+
+        caption:
+          'In a Barbie world'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 2/nola.png',
+
+        caption:
+          'Campagnebeeld'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 2/IMG_0004.jpg',
+
+        caption:
+          'De interactieve doos'
+      }
+
+    ]
+  },
+
+
+  /* PROJECT 3 */
+
+  {
+    id:
+      'resurface',
+
+    title:
+      'Resurface',
+
+    subtitle:
+      'Rationeel Herstelwater',
+
+    category:
+      'Branding & Packaging',
+
+    mainImage:
+      'images/project 3/voorbeeld_blikje.png',
+
+    lead:
+      'Herstelwater dat staat voor helderheid, kracht en controle op momenten waarop alles om je heen overweldigend voelt.',
+
+    description:
+`Voor dit project kreeg ik de opdracht om een blikje voor "Rationeel Herstelwater" te ontwerpen. Vanuit het thema rationaliteit ontwikkelde ik het concept Resurface: herstelwater dat staat voor helderheid, kracht en controle op momenten waarop alles om je heen overweldigend voelt.
+
+In het ontwerp staat een golf centraal die de vorm aanneemt van een gespierde arm. De golf symboliseert kracht, richting en houvast. Daartegenover staat een verdrinkende arm die naar de golf probeert te grijpen. Dit beeld verbeeldt het gevoel van overspoeld worden door prikkels, verwachtingen en emoties, en de behoefte om daar weer bovenuit te komen.
+
+De tegenstelling tussen deze twee armen vormt de kern van het ontwerp: je kunt je laten meeslepen door de stroom, of bewust proberen de controle terug te pakken. De golf beweegt krachtig vooruit en laat zich niet leiden door emoties. Daarmee staat hij symbool voor het rationele karakter van het product.
+
+Met Resurface wilde ik een visuele identiteit creëren die niet alleen kracht uitstraalt, maar ook een verhaal vertelt. De boodschap is om houvast te vinden wanneer alles te veel wordt, weer boven water te komen en vanuit helderheid verder te gaan.`,
+
+    context:
+      'CMD Avans Breda • Media Design',
+
+    year:
+      '2026',
+
+    tools:
+      'Adobe Illustrator, Typografie raster, Vector Art, Blikwikkel Mockup',
+
+    images: [
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 3/voorbeeld_blikje.png',
+
+        caption:
+          '3D Visualisatie'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 3/poster voorbeeld inclusief logo.jpg',
+
+        caption:
+          'Poster voorbeeld inclusief logo'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 3/hoofdfoto.png',
+
+        caption:
+          'Resurface'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 3/ontwerp_blikje.png',
+
+        caption:
+          'Blikwikkel'
+      }
+
+    ]
+  },
+
+
+  /* PROJECT 4 */
+
+  {
+    id:
+      'ladybird',
+
+    title:
+      'Optiteling LadyBird',
+
+    subtitle:
+      'Stopmotion Title Sequence',
+
+    category:
+      'Motion & Video',
+
+    mainImage:
+      'images/project 4/Hoofdfoto.png',
+
+    lead:
+      'DIY stopmotion optiteling voor de film Lady Bird, geïnspireerd op handgemaakte papiercollages.',
+
+    description:
+`Voor dit project heb ik een eigen optiteling ontworpen voor de film Lady Bird. Ik wilde een visuele stijl creëren die herkenbaar bij de film past en daarom heb ik een element uit het verhaal als uitgangspunt genomen.
+
+In de film maakt Lady Bird zelf een eenvoudige, handgemaakte poster wanneer ze zich voor de grap opgeeft als klassepresident. Die DIY-uitstraling heb ik gebruikt als inspiratie voor de vormgeving van de optiteling. Met papier, geknipte vormen en losse composities wilde ik verschillende thema’s en de sfeer van de film op een speelse manier terug laten komen.
+
+Voor de uitvoering koos ik voor stopmotion. Deze techniek paste het beste bij het gevoel dat ik wilde neerzetten: alsof Lady Bird zelf op haar kamer bezig is met knippen, schuiven en plakken. Door de imperfecte en handgemaakte uitstraling voelt de optiteling persoonlijk en sluit hij aan bij het karakter en de wereld van de film.`,
+
+    context:
+      'CMD Avans Breda • Media Design',
+
+    year:
+      '2026',
+
+    tools:
+      'Stopmotion animatie, Papiercollage, Setdesign, Premiere Pro',
+
+    images: [
+
+      {
+        type:
+          'video',
+
+        path:
+          'images/project 4/video.mp4',
+
+        poster:
+          'images/project 4/Hoofdfoto.png',
+
+        caption:
+          'Optiteling LadyBird'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 4/Hoofdfoto.png',
+
+        caption:
+          'Optiteling LadyBird - Hoofdbeeld'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 4/Schermafbeelding 2026-06-09 113051.png',
+
+        caption:
+          'Still 1'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 4/Schermafbeelding 2026-06-09 113138.png',
+
+        caption:
+          'Still 2'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 4/Schermafbeelding 2026-06-09 113249.png',
+
+        caption:
+          'Still 3'
+      }
+
+    ]
+  },
+
+
+  /* PROJECT 5 */
+
+  {
+    id:
+      'sprong-naar-het-licht',
+
+    title:
+      'De sprong naar het licht',
+
+    subtitle:
+      'Stopmotion',
+
+    category:
+      'Motion & Video',
+
+    mainImage:
+      'images/project 5/hoofdfoto.png',
+
+    lead:
+      'Een symbolische stopmotion over het vinden van de kracht om uit een donkere mentale situatie te ontsnappen en richting het licht te bewegen.',
+
+    description:
+`"De sprong naar het licht" is een stopmotion over een meisje dat vastzit in een donkere wereld en langzaam de kracht vindt om hieruit te ontsnappen. Ze wordt voortdurend omringd door stemmen die haar klein houden en proberen tegen te houden.
+
+Op een bepaald moment besluit ze niet langer naar deze stemmen te luisteren. Ze rent ervan weg en waagt uiteindelijk een sprong, zonder te weten waar die haar naartoe zal brengen. Juist door dat risico te nemen, weet ze uit de duisternis te ontsnappen.
+
+Met deze stopmotion wilde ik op een symbolische manier laten zien hoe moeilijk het kan zijn om uit een negatieve mentale situatie te komen. De sprong staat voor het moment waarop je kiest voor verandering, ondanks onzekerheid en angst, en toch probeert richting het licht te bewegen.`,
+
+    context:
+      'ArtCode vooropleiding Fontys Tilburg',
+
+    year:
+      '2025',
+
+    tools:
+      'Stopmotion, Storytelling, Setdesign, Fotografie & Videomontage',
+
+    images: [
+
+      {
+        type:
+          'video',
+
+        path:
+          'images/project 5/video.mp4',
+
+        poster:
+          'images/project 5/hoofdfoto.png',
+
+        caption:
+          'De sprong naar het licht'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 5/hoofdfoto.png',
+
+        caption:
+          'Hoofdbeeld'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 5/foto2.png',
+
+        caption:
+          'Still 2'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 5/foto3.png',
+
+        caption:
+          'Still 3'
+      }
+
+    ]
+  },
+
+
+  /* PROJECT 6 */
+
+  {
+    id:
+      'veilig-thuis',
+
+    title:
+      'Twijfel je? Vraag gewoon! Geen risico is te klein.',
+
+    subtitle:
+      'Campagneconcept voor Veilig Thuis',
+
+    category:
+      'Social Design & Campagne',
+
+    mainImage:
+      'images/project 6/Hoofdfoto.jpg',
+
+    lead:
+      'Een campagneconcept voor Veilig Thuis dat mensen aanspoort om niet te twijfelen bij signalen van kindermishandeling en kinderen een anonieme manier geeft om contact te zoeken.',
+
+    description:
+`Voor dit project kreeg ik van opdrachtgever Extrafazant de opdracht om een campagneconcept te bedenken voor Veilig Thuis. Veel mensen zijn zich niet bewust van de verschillende vormen van kindermishandeling en de signalen die daarbij horen. Daarom wilde ik hier met mijn concept aandacht voor vragen en meer bewustzijn creëren.
+
+Daarnaast wilde ik een manier bedenken waarop kinderen zelf anoniem contact kunnen opnemen met Veilig Thuis en vragen kunnen stellen. Kinderen op de basisschool hebben namelijk vaak nog geen eigen telefoon waarmee ze gemakkelijk kunnen appen.
+
+De belangrijkste boodschap die ik wilde overbrengen, was dat je niet hoeft te twijfelen. Veel mensen twijfelen wanneer ze signalen zien: “Het zal wel niets zijn”, “Misschien heb ik het verkeerd gezien” of “Wat als ik iemand onterecht ergens van beschuldig?” Die gedachte wilde ik wegnemen. Het is heel normaal om te twijfelen, maar die twijfel hoeft je er niet van te weerhouden om een vraag te stellen. Bij Veilig Thuis kun je terecht met je twijfels en vragen en samen uitzoeken wat een goede volgende stap is. Je hoeft er niet alleen mee rond te blijven lopen. Liever een melding te veel dan een melding te weinig.
+
+“Twijfel je? Vraag gewoon. Geen risico is te klein.”
+
+Dit concept heb ik op verschillende manieren gevisualiseerd. Zo maakte ik een reclamevideo in een getekende stijl, zodat deze goed aansluit bij de doelgroep. In de video stuurt Veilig Thuis verschillende berichten waarin mogelijke signalen van kindermishandeling worden beschreven. Vervolgens wordt gevraagd of de persoon zo’n situatie herkent.
+
+Je ziet dat de persoon begint met typen, maar het bericht uiteindelijk toch verwijdert vanwege twijfel. Veilig Thuis speelt hier vervolgens op in door duidelijk te maken dat twijfelen heel normaal is, maar dat die twijfel niet nodig is om een vraag te kunnen stellen. Daarna wordt het gesprek voortgezet.
+
+Daarnaast wilde ik een fysiek object maken dat aandacht trekt voor verschillende signalen van kindermishandeling en kinderen tegelijkertijd de mogelijkheid geeft om zelf contact op te zoeken. Hiervoor ontwierp ik een grote telefoon waarop steeds verschillende scenario’s in berichtvorm worden getoond. Hierop volgt de boodschap:
+
+“Herken jij dit of zie je signalen bij iemand die je kent? Twijfel niet, vraag gewoon. Geen risico is te klein.”
+
+Deze grote telefoon heb ik buiten de toiletten op school geplaatst, zodat hij veel aandacht trekt. In ieder toilethokje bevindt zich vervolgens een kleinere, interactieve telefoon waarmee kinderen anoniem kunnen chatten met Veilig Thuis.
+
+Wanneer iemand het gesprek stopt, ontvangt diegene een bonnetje met een unieke code. Met deze code kan het gesprek later worden voortgezet, bijvoorbeeld tijdens een volgend bezoek of op een ander apparaat. Hierdoor hoeft iemand geen persoonlijke gegevens achter te laten.
+
+De toiletten zijn hiervoor bewust gekozen als locatie. Iedereen gaat weleens naar het toilet, waardoor het voor anderen niet zichtbaar is dat iemand contact zoekt met Veilig Thuis. Zo blijft het contact zo anoniem en laagdrempelig mogelijk.
+
+Tot slot heb ik ook een voorbeeldscherm ontworpen waarop zichtbaar is hoe de interactieve telefoon werkt en hoe een gesprek met Veilig Thuis kan worden gestart en later weer kan worden voortgezet.`,
+
+    context:
+      'CMD Avans Breda • Opdracht voor Extrafazant • Campagneconcept Veilig Thuis',
+
+    year:
+      '2026',
+
+    tools:
+      'Conceptontwikkeling, Campagneontwerp, Social Design, Storytelling, Illustratie, Video & Animatie, Visualiseren door middel van AI, Interactieontwerp',
+
+    images: [
+
+      {
+        type:
+          'video',
+
+        path:
+          'images/project 6/Video1.mp4',
+
+        caption:
+          'Video 1'
+      },
+
+      {
+        type:
+          'video',
+
+        path:
+          'images/project 6/veilig_thuis_met_overgangen.mp4',
+
+        caption:
+          'Veilig Thuis met overgangen'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 6/Anonieme hulp in de toiletcabine.png',
+
+        caption:
+          'Anonieme hulp in de toiletcabine'
+      },
+
+      {
+        type:
+          'img',
+
+        path:
+          'images/project 6/Hoe werkt de Veilig Thuis telefoon_.png',
+
+        caption:
+          'Hoe werkt de Veilig Thuis telefoon?'
+      },
+
+      {
+        type:
+          'video',
+
+        path:
+          'images/project 6/Schermopname 2026-10-29 124613.mp4',
+
+        caption:
+          'Schermopname Veilig Thuis telefoon'
+      }
+
+    ]
+  }
+
+];
+
+
+const DETAIL_FRAME_COLORS = [
+  'var(--color-green)',
+  'var(--color-pink)',
+  'var(--color-mint)',
+  'var(--color-pink)',
+  'var(--color-green)'
+];
+
+
+let detailRenderToken =
+  0;
+
+
+/* NAVIGATIE */
+
+function getHashForView(
+  viewId
+) {
+
+  const routes = {
+
+    'view-home':
+      '#home',
+
+    'view-projects':
+      '#projects',
+
+    'view-about':
+      '#about',
+
+    'view-contact':
+      '#contact'
+
+  };
+
+
+  return (
+    routes[viewId] ||
+    '#home'
+  );
+
+}
+
+
+function switchView(
+  viewId,
+  addToHistory = true
+) {
+
+  const target =
+    document.getElementById(
+      viewId
+    );
+
+
+  if (!target) {
+    return;
+  }
+
+
+  document
+    .querySelectorAll(
+      '.view-section'
+    )
+    .forEach(
+      view => {
+
+        view.classList.remove(
+          'active'
+        );
+
+      }
+    );
+
+
+  target.classList.add(
+    'active'
+  );
+
+
+  document
+    .querySelectorAll(
+      '.nav-btn'
+    )
+    .forEach(
+      btn => {
+
+        btn.classList.toggle(
+
+          'active',
+
+          btn.dataset.target ===
+          viewId
+
+        );
+
+      }
+    );
+
+
+  document
+    .querySelector(
+      '.nav-links'
+    )
+    ?.classList.remove(
+      'open'
+    );
+
+
+  window.scrollTo({
+
+    top:
+      0,
+
+    behavior:
+      addToHistory
+        ? 'smooth'
+        : 'auto'
+
+  });
+
+
+  if (
+    addToHistory &&
+    viewId !==
+    'view-project-detail'
+  ) {
+
+    history.pushState(
+
+      {
+        viewId:
+          viewId
+      },
+
+      '',
+
+      getHashForView(
+        viewId
+      )
+
+    );
+
+  }
+
+}
+
+
+function loadRouteFromUrl() {
+
+  const hash =
+    window.location.hash ||
+    '#home';
+
+
+  if (
+    hash.startsWith(
+      '#project/'
+    )
+  ) {
+
+    const id =
+      decodeURIComponent(
+
+        hash.replace(
+          '#project/',
+          ''
+        )
+
+      );
+
+
+    if (
+      PROJECTS_DATA.some(
+        project =>
+          project.id ===
+          id
+      )
+    ) {
+
+      openProjectDetail(
+        id,
+        false
+      );
+
+      return;
+
+    }
+
+  }
+
+
+  const routes = {
+
+    '#home':
+      'view-home',
+
+    '#projects':
+      'view-projects',
+
+    '#about':
+      'view-about',
+
+    '#contact':
+      'view-contact'
+
+  };
+
+
+  switchView(
+
+    routes[hash] ||
+    'view-home',
+
+    false
+
+  );
+
+}
+
+
+function setupNavigation() {
+
+  document
+    .querySelectorAll(
+      '[data-target]'
+    )
+    .forEach(
+      element => {
+
+        element.addEventListener(
+
+          'click',
+
+          event => {
+
+            event.preventDefault();
+
+
+            switchView(
+              element.dataset.target
+            );
+
+          }
+
+        );
+
+      }
+    );
+
+
+  document
+    .getElementById(
+      'mobile-menu-toggle'
+    )
+    ?.addEventListener(
+
+      'click',
+
+      () => {
+
+        document
+          .querySelector(
+            '.nav-links'
+          )
+          ?.classList.toggle(
+            'open'
+          );
+
+      }
+
+    );
+
+
+  document
+    .querySelectorAll(
+      '.btn-back'
+    )
+    .forEach(
+      button => {
+
+        button.addEventListener(
+
+          'click',
+
+          () => {
+
+            switchView(
+
+              button.dataset.backTo ||
+              'view-home'
+
+            );
+
+          }
+
+        );
+
+      }
+    );
+
+}
+
+
+/* GOLVENDE VORMEN */
+
+function catmullRomClosedPath(
+  points
+) {
+
+  if (
+    points.length <
+    4
+  ) {
+
+    return '';
+
+  }
+
+
+  let path =
+    `M ${points[0].x.toFixed(2)} ${points[0].y.toFixed(2)}`;
+
+
+  for (
+    let i = 0;
+    i < points.length;
+    i++
+  ) {
+
+    const p0 =
+      points[
+        (
+          i -
+          1 +
+          points.length
+        ) %
+        points.length
+      ];
+
+
+    const p1 =
+      points[i];
+
+
+    const p2 =
+      points[
+        (
+          i +
+          1
+        ) %
+        points.length
+      ];
+
+
+    const p3 =
+      points[
+        (
+          i +
+          2
+        ) %
+        points.length
+      ];
+
+
+    const cp1x =
+      p1.x +
+      (
+        p2.x -
+        p0.x
+      ) /
+      6;
+
+
+    const cp1y =
+      p1.y +
+      (
+        p2.y -
+        p0.y
+      ) /
+      6;
+
+
+    const cp2x =
+      p2.x -
+      (
+        p3.x -
+        p1.x
+      ) /
+      6;
+
+
+    const cp2y =
+      p2.y -
+      (
+        p3.y -
+        p1.y
+      ) /
+      6;
+
+
+    path +=
+      ` C ${cp1x.toFixed(2)} ${cp1y.toFixed(2)}, ${cp2x.toFixed(2)} ${cp2y.toFixed(2)}, ${p2.x.toFixed(2)} ${p2.y.toFixed(2)}`;
+
+  }
+
+
+  return path +
+    ' Z';
+
+}
+
+
+function createPostageStampPathAt(
+  x = 0,
+  y = 0,
+  width = 100,
+  height = 125,
+  inset = 0,
+  wave = 2.8,
+  wavesX = 4,
+  wavesY = 6
+) {
+
+  const points =
+    [];
+
+
+  const left =
+    x +
+    inset;
+
+
+  const right =
+    x +
+    width -
+    inset;
+
+
+  const top =
+    y +
+    inset;
+
+
+  const bottom =
+    y +
+    height -
+    inset;
+
+
+  const corner =
+    Math.max(
+
+      6,
+
+      Math.min(
+        width,
+        height
+      ) *
+      0.085
+
+    );
+
+
+  const samplesX =
+    Math.max(
+      36,
+      wavesX * 24
+    );
+
+
+  const samplesY =
+    Math.max(
+      36,
+      wavesY * 24
+    );
+
+
+  for (
+    let i = 0;
+    i <= samplesX;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesX;
+
+
+    points.push({
+
+      x:
+        left +
+        corner +
+        (
+          right -
+          left -
+          2 *
+          corner
+        ) *
+        t,
+
+      y:
+        top +
+        wave *
+        Math.sin(
+          t *
+          Math.PI *
+          2 *
+          wavesX
+        )
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= 16;
+    i++
+  ) {
+
+    const a =
+      -Math.PI /
+      2 +
+      (
+        Math.PI /
+        2
+      ) *
+      (
+        i /
+        16
+      );
+
+
+    points.push({
+
+      x:
+        right -
+        corner +
+        corner *
+        Math.cos(a),
+
+      y:
+        top +
+        corner +
+        corner *
+        Math.sin(a)
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= samplesY;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesY;
+
+
+    points.push({
+
+      x:
+        right +
+        wave *
+        Math.sin(
+          t *
+          Math.PI *
+          2 *
+          wavesY
+        ),
+
+      y:
+        top +
+        corner +
+        (
+          bottom -
+          top -
+          2 *
+          corner
+        ) *
+        t
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= 16;
+    i++
+  ) {
+
+    const a =
+      (
+        Math.PI /
+        2
+      ) *
+      (
+        i /
+        16
+      );
+
+
+    points.push({
+
+      x:
+        right -
+        corner +
+        corner *
+        Math.cos(a),
+
+      y:
+        bottom -
+        corner +
+        corner *
+        Math.sin(a)
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= samplesX;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesX;
+
+
+    points.push({
+
+      x:
+        right -
+        corner -
+        (
+          right -
+          left -
+          2 *
+          corner
+        ) *
+        t,
+
+      y:
+        bottom +
+        wave *
+        Math.sin(
+          t *
+          Math.PI *
+          2 *
+          wavesX
+        )
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= 16;
+    i++
+  ) {
+
+    const a =
+      Math.PI /
+      2 +
+      (
+        Math.PI /
+        2
+      ) *
+      (
+        i /
+        16
+      );
+
+
+    points.push({
+
+      x:
+        left +
+        corner +
+        corner *
+        Math.cos(a),
+
+      y:
+        bottom -
+        corner +
+        corner *
+        Math.sin(a)
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= samplesY;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesY;
+
+
+    points.push({
+
+      x:
+        left +
+        wave *
+        Math.sin(
+          t *
+          Math.PI *
+          2 *
+          wavesY
+        ),
+
+      y:
+        bottom -
+        corner -
+        (
+          bottom -
+          top -
+          2 *
+          corner
+        ) *
+        t
+
+    });
+
+  }
+
+
+  for (
+    let i = 1;
+    i <= 16;
+    i++
+  ) {
+
+    const a =
+      Math.PI +
+      (
+        Math.PI /
+        2
+      ) *
+      (
+        i /
+        16
+      );
+
+
+    points.push({
+
+      x:
+        left +
+        corner +
+        corner *
+        Math.cos(a),
+
+      y:
+        top +
+        corner +
+        corner *
+        Math.sin(a)
+
+    });
+
+  }
+
+
+  return catmullRomClosedPath(
+    points
+  );
+
+}
+
+
+function createPostageStampPath(
+  width = 100,
+  height = 125,
+  inset = 3.5,
+  wave = 2.9,
+  wavesX = 4,
+  wavesY = 6
+) {
+
+  return createPostageStampPathAt(
+
+    0,
+    0,
+    width,
+    height,
+    inset,
+    wave,
+    wavesX,
+    wavesY
+
+  );
+
+}
+
+
+/* PROJECTKAARTEN */
+
+function splitStampTitle(
+  title,
+  maxCharacters = 18,
+  maxLines = 3
+) {
+
+  const words =
+    title.split(
+      ' '
+    );
+
+
+  const lines =
+    [''];
+
+
+  words.forEach(
+    word => {
+
+      const current =
+        lines[
+          lines.length -
+          1
+        ];
+
+
+      const candidate =
+        current
+          ? `${current} ${word}`
+          : word;
+
+
+      if (
+        candidate.length >
+        maxCharacters &&
+        lines.length <
+        maxLines
+      ) {
+
+        lines.push(
+          word
+        );
+
+      }
+
+      else {
+
+        lines[
+          lines.length -
+          1
+        ] =
+          candidate;
+
+      }
+
+    }
+  );
+
+
+  return lines.slice(
+    0,
+    maxLines
+  );
+
+}
+
+
+function projectCardMarkup(
+  project,
+  index,
+  prefix
+) {
+
+  const rotations = [
+    '-2.5deg',
+    '1.8deg',
+    '-1.2deg',
+    '2.2deg',
+    '-1.8deg'
+  ];
+
+
+  const colors = [
+    'var(--color-green)',
+    'var(--color-cream)',
+    'var(--color-mint)',
+    'var(--color-cream)',
+    'var(--color-green)'
+  ];
+
+
+  const shapes = [
+    [2.8, 4, 6],
+    [3.0, 5, 6],
+    [2.7, 4, 5],
+    [3.1, 5, 7],
+    [2.9, 4, 6]
+  ];
+
+
+  const [
+    wave,
+    wavesX,
+    wavesY
+  ] =
+    shapes[
+      index %
+      shapes.length
+    ];
+
+
+  const path =
+    createPostageStampPath(
+
+      100,
+      125,
+      3.5,
+      wave,
+      wavesX,
+      wavesY
+
+    );
+
+
+  const clipId =
+    `${prefix}-clip-${index}`;
+
+
+  const lines =
+    splitStampTitle(
+      project.title,
+      18,
+      3
+    );
+
+
+  let startY =
+    109;
+
+
+  let fontSize =
+    6.2;
+
+
+  let lineSpacing =
+    6.4;
+
+
+  if (
+    lines.length ===
+    2
+  ) {
+
+    startY =
+      105.5;
+
+  }
+
+
+  if (
+    lines.length ===
+    3
+  ) {
+
+    startY =
+      101;
+
+    fontSize =
+      4.8;
+
+    lineSpacing =
+      5.5;
+
+  }
+
+
+  const titleMarkup =
+    lines
+      .map(
+        (
+          line,
+          i
+        ) =>
+
+          `<tspan x="50" y="${startY + i * lineSpacing}">${line}</tspan>`
+
+      )
+      .join('');
+
+
+  return `
+
+    <button
+      type="button"
+      class="featured-sticker"
+      data-project-id="${project.id}"
+      style="
+        --sticker-rotate:
+        ${rotations[index % rotations.length]};
+
+        --stamp-color:
+        ${colors[index % colors.length]};
+      "
+    >
+
+      <svg
+        class="featured-stamp-svg"
+        viewBox="0 0 100 125"
+        role="img"
+        aria-label="${project.title}"
+      >
+
+        <defs>
+
+          <clipPath
+            id="${clipId}"
+          >
+
+            <rect
+              x="13"
+              y="13"
+              width="74"
+              height="77"
+              rx="2"
+            ></rect>
+
+          </clipPath>
+
+        </defs>
+
+
+        <path
+          d="${path}"
+          class="featured-stamp-outer"
+        ></path>
+
+
+        <rect
+          x="9"
+          y="9"
+          width="82"
+          height="107"
+          rx="3"
+          class="featured-stamp-inner"
+        ></rect>
+
+
+        <rect
+          x="11.5"
+          y="11.5"
+          width="77"
+          height="80"
+          rx="2.5"
+          class="featured-stamp-photo-frame"
+        ></rect>
+
+
+        <image
+          href="${project.mainImage}"
+          x="13"
+          y="13"
+          width="74"
+          height="77"
+          preserveAspectRatio="xMidYMid slice"
+          clip-path="url(#${clipId})"
+        ></image>
+
+
+        <path
+          d="M 14 96 H 86"
+          class="featured-stamp-mark"
+        ></path>
+
+
+        <text
+          x="50"
+          y="109"
+          class="featured-stamp-title"
+          style="
+            font-size:
+            ${fontSize}px;
+          "
+        >
+          ${titleMarkup}
+        </text>
+
+      </svg>
+
+    </button>
+
+  `;
+
+}
+
+
+function connectProjectCards(
+  container
+) {
+
+  container
+    .querySelectorAll(
+      '[data-project-id]'
+    )
+    .forEach(
+      card => {
+
+        card.addEventListener(
+
+          'click',
+
+          () => {
+
+            openProjectDetail(
+              card.dataset.projectId
+            );
+
+          }
+
+        );
+
+      }
+    );
+
+}
+
+
+function renderProjectCards() {
+
+  const home =
+    document.getElementById(
+      'featured-stickers-board'
+    );
+
+
+  const grid =
+    document.getElementById(
+      'projects-grid'
+    );
+
+
+  if (home) {
+
+    home.innerHTML =
+      PROJECTS_DATA
+        .map(
+          (
+            project,
+            index
+          ) =>
+
+            projectCardMarkup(
+              project,
+              index,
+              'home'
+            )
+
+        )
+        .join('');
+
+
+    connectProjectCards(
+      home
+    );
+
+  }
+
+
+  if (grid) {
+
+    grid.innerHTML =
+      PROJECTS_DATA
+        .map(
+          (
+            project,
+            index
+          ) =>
+
+            projectCardMarkup(
+              project,
+              index,
+              'grid'
+            )
+
+        )
+        .join('');
+
+
+    connectProjectCards(
+      grid
+    );
+
+  }
+
+}
+
+
+/* BADGES */
+
+function renderWavyBadge(
+  element,
+  label,
+  color,
+  width
+) {
+
+  if (!element) {
+    return;
+  }
+
+
+  if (!label) {
+
+    element.style.display =
+      'none';
+
+    element.innerHTML =
+      '';
+
+    return;
+
+  }
+
+
+  element.style.display =
+    'inline-flex';
+
+
+  const height =
+    42;
+
+
+  const path =
+    createPostageStampPath(
+
+      width,
+      height,
+      2.8,
+      0.8,
+      4,
+      2
+
+    );
+
+
+  element.innerHTML = `
+
+    <svg
+      class="detail-badge-svg"
+      viewBox="0 0 ${width} ${height}"
+      style="
+        --badge-fill:
+        ${color};
+      "
+    >
+
+      <path
+        d="${path}"
+        class="detail-badge-shape"
+      ></path>
+
+
+      <text
+        x="${width / 2}"
+        y="${height / 2 + 0.5}"
+        class="detail-badge-text"
+      >
+        ${label}
+      </text>
+
+    </svg>
+
+  `;
+
+}
+
+
+/* MEDIA ORIËNTATIE */
+
+function loadImageOrientation(
+  src
+) {
+
+  return new Promise(
+    resolve => {
+
+      const image =
+        new Image();
+
+
+      image.onload =
+        () => {
+
+          const ratio =
+            image.naturalWidth /
+            image.naturalHeight;
+
+
+          if (
+            ratio >
+            1.12
+          ) {
+
+            resolve(
+              'landscape'
+            );
+
+          }
+
+          else if (
+            ratio <
+            0.88
+          ) {
+
+            resolve(
+              'portrait'
+            );
+
+          }
+
+          else {
+
+            resolve(
+              'square'
+            );
+
+          }
+
+        };
+
+
+      image.onerror =
+        () => {
+
+          resolve(
+            'portrait'
+          );
+
+        };
+
+
+      image.src =
+        src;
+
+    }
+  );
+
+}
+
+
+function loadVideoOrientation(
+  src
+) {
+
+  return new Promise(
+    resolve => {
+
+      const video =
+        document.createElement(
+          'video'
+        );
+
+
+      video.preload =
+        'metadata';
+
+
+      video.muted =
+        true;
+
+
+      video.onloadedmetadata =
+        () => {
+
+          const ratio =
+            video.videoWidth /
+            video.videoHeight;
+
+
+          if (
+            ratio >
+            1.12
+          ) {
+
+            resolve(
+              'landscape'
+            );
+
+          }
+
+          else if (
+            ratio <
+            0.88
+          ) {
+
+            resolve(
+              'portrait'
+            );
+
+          }
+
+          else {
+
+            resolve(
+              'square'
+            );
+
+          }
+
+
+          video.removeAttribute(
+            'src'
+          );
+
+
+          video.load();
+
+        };
+
+
+      video.onerror =
+        () => {
+
+          resolve(
+            'landscape'
+          );
+
+        };
+
+
+      video.src =
+        src;
+
+    }
+  );
+
+}
+
+
+async function mediaOrientation(
+  media
+) {
+
+  if (
+    media.type ===
+    'video'
+  ) {
+
+    return loadVideoOrientation(
+      media.path
+    );
+
+  }
+
+
+  return loadImageOrientation(
+    media.path
+  );
+
+}
+
+
+/* MEDIA KADERS */
+
+function frameConfig(
+  orientation
+) {
+
+  if (
+    orientation ===
+    'landscape'
+  ) {
+
+    return {
+
+      viewBox:
+        '0 0 120 95',
+
+      width:
+        120,
+
+      height:
+        95,
+
+      outer:
+        createPostageStampPathAt(
+          2.5,
+          2.5,
+          115,
+          90,
+          0,
+          0.9,
+          4,
+          3
+        ),
+
+      inner:
+        createPostageStampPathAt(
+          4.8,
+          4.8,
+          110.4,
+          85.4,
+          0,
+          0.72,
+          4,
+          3
+        ),
+
+      x:
+        4.8,
+
+      y:
+        4.8,
+
+      w:
+        110.4,
+
+      h:
+        85.4
+
+    };
+
+  }
+
+
+  if (
+    orientation ===
+    'square'
+  ) {
+
+    return {
+
+      viewBox:
+        '0 0 100 100',
+
+      width:
+        100,
+
+      height:
+        100,
+
+      outer:
+        createPostageStampPathAt(
+          2.5,
+          2.5,
+          95,
+          95,
+          0,
+          0.85,
+          3,
+          3
+        ),
+
+      inner:
+        createPostageStampPathAt(
+          4.8,
+          4.8,
+          90.4,
+          90.4,
+          0,
+          0.68,
+          3,
+          3
+        ),
+
+      x:
+        4.8,
+
+      y:
+        4.8,
+
+      w:
+        90.4,
+
+      h:
+        90.4
+
+    };
+
+  }
+
+
+  return {
+
+    viewBox:
+      '0 0 100 120',
+
+    width:
+      100,
+
+    height:
+      120,
+
+    outer:
+      createPostageStampPathAt(
+        2.5,
+        2.5,
+        95,
+        115,
+        0,
+        0.9,
+        3,
+        4
+      ),
+
+    inner:
+      createPostageStampPathAt(
+        4.8,
+        4.8,
+        90.4,
+        110.4,
+        0,
+        0.72,
+        3,
+        4
+      ),
+
+    x:
+      4.8,
+
+    y:
+      4.8,
+
+    w:
+      90.4,
+
+    h:
+      110.4
+
+  };
+
+}
+
+
+function videoClipPolygon(
+  orientation
+) {
+
+  const wavesX =
+    orientation ===
+    'portrait'
+      ? 3
+      : 4;
+
+
+  const wavesY =
+    orientation ===
+    'landscape'
+      ? 3
+      : 4;
+
+
+  const points =
+    [];
+
+
+  const amplitude =
+    1.15;
+
+
+  const inset =
+    1.6;
+
+
+  const samplesX =
+    30;
+
+
+  const samplesY =
+    26;
+
+
+  for (
+    let i = 0;
+    i <= samplesX;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesX;
+
+
+    points.push(
+
+      `${
+        (
+          3 +
+          94 *
+          t
+        ).toFixed(2)
+      }% ${
+        (
+          inset +
+          amplitude *
+          Math.sin(
+            t *
+            Math.PI *
+            2 *
+            wavesX
+          )
+        ).toFixed(2)
+      }%`
+
+    );
+
+  }
+
+
+  points.push(
+    '99% 3%'
+  );
+
+
+  for (
+    let i = 0;
+    i <= samplesY;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesY;
+
+
+    points.push(
+
+      `${
+        (
+          98.4 +
+          amplitude *
+          Math.sin(
+            t *
+            Math.PI *
+            2 *
+            wavesY
+          )
+        ).toFixed(2)
+      }% ${
+        (
+          3 +
+          94 *
+          t
+        ).toFixed(2)
+      }%`
+
+    );
+
+  }
+
+
+  points.push(
+    '97% 99%'
+  );
+
+
+  for (
+    let i = 0;
+    i <= samplesX;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesX;
+
+
+    points.push(
+
+      `${
+        (
+          97 -
+          94 *
+          t
+        ).toFixed(2)
+      }% ${
+        (
+          98.4 +
+          amplitude *
+          Math.sin(
+            t *
+            Math.PI *
+            2 *
+            wavesX
+          )
+        ).toFixed(2)
+      }%`
+
+    );
+
+  }
+
+
+  points.push(
+    '1% 97%'
+  );
+
+
+  for (
+    let i = 0;
+    i <= samplesY;
+    i++
+  ) {
+
+    const t =
+      i /
+      samplesY;
+
+
+    points.push(
+
+      `${
+        (
+          inset +
+          amplitude *
+          Math.sin(
+            t *
+            Math.PI *
+            2 *
+            wavesY
+          )
+        ).toFixed(2)
+      }% ${
+        (
+          97 -
+          94 *
+          t
+        ).toFixed(2)
+      }%`
+
+    );
+
+  }
+
+
+  points.push(
+    '3% 1%'
+  );
+
+
+  return (
+    `polygon(${points.join(',')})`
+  );
+
+}
+
+
+function frameColor(
+  index
+) {
+
+  return DETAIL_FRAME_COLORS[
+    index %
+    DETAIL_FRAME_COLORS.length
+  ];
+
+}
+
+
+/* AFBEELDING */
+
+function imageMediaMarkup(
+  project,
+  media,
+  index,
+  orientation
+) {
+
+  const config =
+    frameConfig(
+      orientation
+    );
+
+
+  const clipId =
+    `img-${project.id}-${index}`;
+
+
+  return `
+
+    <div
+      class="
+        collage-item
+        media-${orientation}
+        collage-item-${
+          (
+            index %
+            3
+          ) +
+          1
+        }
+      "
+      data-image-index="${index}"
+    >
+
+      <svg
+        class="detail-media-svg"
+        viewBox="${config.viewBox}"
+        role="img"
+        aria-label="${media.caption || project.title}"
+        style="
+          --detail-frame-color:
+          ${frameColor(index)};
+        "
+      >
+
+        <defs>
+
+          <clipPath
+            id="${clipId}"
+          >
+
+            <path
+              d="${config.inner}"
+            ></path>
+
+          </clipPath>
+
+        </defs>
+
+
+        <path
+          d="${config.outer}"
+          class="detail-media-frame-outer"
+        ></path>
+
+
+        <path
+          d="${config.inner}"
+          class="detail-media-frame-inner"
+        ></path>
+
+
+        <image
+          href="${media.path}"
+          x="${config.x}"
+          y="${config.y}"
+          width="${config.w}"
+          height="${config.h}"
+          preserveAspectRatio="xMidYMid slice"
+          clip-path="url(#${clipId})"
+        ></image>
+
+      </svg>
+
+    </div>
+
+  `;
+
+}
+
+
+/* VIDEO */
+
+function videoMediaMarkup(
+  project,
+  media,
+  index,
+  orientation
+) {
+
+  const config =
+    frameConfig(
+      orientation
+    );
+
+
+  const left =
+    (
+      config.x /
+      config.width *
+      100
+    ).toFixed(4);
+
+
+  const top =
+    (
+      config.y /
+      config.height *
+      100
+    ).toFixed(4);
+
+
+  const width =
+    (
+      config.w /
+      config.width *
+      100
+    ).toFixed(4);
+
+
+  const height =
+    (
+      config.h /
+      config.height *
+      100
+    ).toFixed(4);
+
+
+  return `
+
+    <div
+      class="
+        collage-item
+        video-item
+        media-${orientation}
+        collage-item-${
+          (
+            index %
+            3
+          ) +
+          1
+        }
+      "
+    >
+
+      <div
+        class="video-wave-shell"
+        style="
+          --shell-aspect:
+          ${config.width}/${config.height};
+
+          --video-left:
+          ${left}%;
+
+          --video-top:
+          ${top}%;
+
+          --video-width:
+          ${width}%;
+
+          --video-height:
+          ${height}%;
+
+          --video-clip:
+          ${videoClipPolygon(orientation)};
+
+          --detail-frame-color:
+          ${frameColor(index)};
+        "
+      >
+
+        <svg
+          class="
+            video-frame-svg
+            video-frame-bg
+          "
+          viewBox="${config.viewBox}"
+          aria-hidden="true"
+        >
+
+          <path
+            d="${config.outer}"
+            class="detail-media-frame-outer"
+          ></path>
+
+        </svg>
+
+
+        <div class="video-wave-media">
+
+          <video
+            class="project-detail-video"
+            controls
+            playsinline
+            preload="metadata"
+            ${
+              media.poster
+                ? `poster="${media.poster}"`
+                : ''
+            }
+          >
+
+            <source
+              src="${media.path}"
+              type="video/mp4"
+            >
+
+            Je browser ondersteunt deze video niet.
+
+          </video>
+
+        </div>
+
+
+        <svg
+          class="
+            video-frame-svg
+            video-frame-lines
+          "
+          viewBox="${config.viewBox}"
+          aria-hidden="true"
+        >
+
+          <path
+            d="${config.outer}"
+            class="video-frame-outline"
+          ></path>
+
+
+          <path
+            d="${config.inner}"
+            class="detail-media-frame-inner"
+          ></path>
+
+        </svg>
+
+      </div>
+
+    </div>
+
+  `;
+
+}
+
+
+/* MEDIA RENDEREN */
+
+async function renderProjectMedia(
+  project
+) {
+
+  const stage =
+    document.getElementById(
+      'detail-collage-stage'
+    );
+
+
+  if (!stage) {
+    return;
+  }
+
+
+  const token =
+    ++detailRenderToken;
+
+
+  const orientations =
+    await Promise.all(
+
+      project.images.map(
+        media =>
+          mediaOrientation(
+            media
+          )
+      )
+
+    );
+
+
+  if (
+    token !==
+    detailRenderToken
+  ) {
+
+    return;
+
+  }
+
+
+  stage.innerHTML =
+    project.images
+      .map(
+        (
+          media,
+          index
+        ) => {
+
+          if (
+            media.type ===
+            'video'
+          ) {
+
+            return videoMediaMarkup(
+
+              project,
+              media,
+              index,
+              orientations[
+                index
+              ]
+
+            );
+
+          }
+
+
+          return imageMediaMarkup(
+
+            project,
+            media,
+            index,
+            orientations[
+              index
+            ]
+
+          );
+
+        }
+      )
+      .join('');
+
+
+  stage
+    .querySelectorAll(
+      '[data-image-index]'
+    )
+    .forEach(
+      item => {
+
+        item.addEventListener(
+
+          'click',
+
+          () => {
+
+            const media =
+              project.images[
+                Number(
+                  item.dataset.imageIndex
+                )
+              ];
+
+
+            if (media) {
+
+              openLightbox(
+                media.path
+              );
+
+            }
+
+          }
+
+        );
+
+      }
+    );
+
+}
+
+
+/* PROJECT OPENEN */
+
+function openProjectDetail(
+  projectId,
+  addToHistory = true
+) {
+
+  const project =
+    PROJECTS_DATA.find(
+
+      item =>
+        item.id ===
+        projectId
+
+    );
+
+
+  if (!project) {
+    return;
+  }
+
+
+  document
+    .getElementById(
+      'detail-project-title'
+    )
+    .textContent =
+      project.title;
+
+
+  document
+    .getElementById(
+      'detail-project-lead'
+    )
+    .textContent =
+      project.lead;
+
+
+  document
+    .getElementById(
+      'detail-project-context'
+    )
+    .textContent =
+      project.context;
+
+
+  document
+    .getElementById(
+      'detail-project-tools'
+    )
+    .textContent =
+      project.tools;
+
+
+  renderWavyBadge(
+
+    document.getElementById(
+      'detail-project-badge'
+    ),
+
+    project.category,
+
+    'var(--color-green)',
+
+    168
+
+  );
+
+
+  renderWavyBadge(
+
+    document.getElementById(
+      'detail-project-year'
+    ),
+
+    project.year,
+
+    'var(--color-mint)',
+
+    92
+
+  );
+
+
+  document
+    .getElementById(
+      'detail-project-desc'
+    )
+    .innerHTML =
+      project.description
+
+        .split(
+          '\n\n'
+        )
+
+        .filter(
+          Boolean
+        )
+
+        .map(
+          paragraph =>
+            `<p>${paragraph}</p>`
+        )
+
+        .join('');
+
+
+  renderProjectMedia(
+    project
+  );
+
+
+  if (
+    addToHistory
+  ) {
+
+    history.pushState(
+
+      {
+        viewId:
+          'view-project-detail',
+
+        projectId:
+          projectId
+      },
+
+      '',
+
+      `#project/${
+        encodeURIComponent(
+          projectId
+        )
+      }`
+
+    );
+
+  }
+
+
+  switchView(
+    'view-project-detail',
+    false
+  );
+
+}
+
+
+/* LIGHTBOX */
+
+function openLightbox(
+  src
+) {
+
+  const modal =
+    document.getElementById(
+      'lightbox-modal'
+    );
+
+
+  const image =
+    document.getElementById(
+      'lightbox-img'
+    );
+
+
+  if (
+    !modal ||
+    !image
+  ) {
+
+    return;
+
+  }
+
+
+  image.src =
+    src;
+
+
+  modal.classList.add(
+    'open'
+  );
+
+}
+
+
+function closeLightbox() {
+
+  const modal =
+    document.getElementById(
+      'lightbox-modal'
+    );
+
+
+  if (modal) {
+
+    modal.classList.remove(
+      'open'
+    );
+
+  }
+
+}
+
+
+/* CONTACT */
+
+function setupContactForm() {
+
+  const form =
+    document.getElementById(
+      'portfolio-contact-form'
+    );
+
+
+  const success =
+    document.getElementById(
+      'form-success-msg'
+    );
+
+
+  if (!form) {
+    return;
+  }
+
+
+  form.addEventListener(
+
+    'submit',
+
+    event => {
+
+      event.preventDefault();
+
+
+      form.reset();
+
+
+      if (success) {
+
+        success.style.display =
+          'block';
+
+
+        setTimeout(
+
+          () => {
+
+            success.style.display =
+              'none';
+
+          },
+
+          5000
+
+        );
+
+      }
+
+    }
+
+  );
+
+}
+
+
+/* START */
+
+document.addEventListener(
+
+  'DOMContentLoaded',
+
+  () => {
+
+    setupNavigation();
+
+    setupContactForm();
+
+    renderProjectCards();
+
+
+    window.addEventListener(
+      'popstate',
+      loadRouteFromUrl
+    );
+
+
+    const initialHash =
+      window.location.hash ||
+      '#home';
+
+
+    history.replaceState(
+      {},
+      '',
+      initialHash
+    );
+
+
+    loadRouteFromUrl();
+
+
+    document
+      .querySelector(
+        '.modal-close-btn'
+      )
+      ?.addEventListener(
+        'click',
+        closeLightbox
+      );
+
+
+    document
+      .getElementById(
+        'lightbox-modal'
+      )
+      ?.addEventListener(
+
+        'click',
+
+        event => {
+
+          if (
+            event.target.id ===
+            'lightbox-modal'
+          ) {
+
+            closeLightbox();
+
+          }
+
+        }
+
+      );
+
+
+    document.addEventListener(
+
+      'keydown',
+
+      event => {
+
+        if (
+          event.key ===
+          'Escape'
+        ) {
+
+          closeLightbox();
+
+        }
+
+      }
+
+    );
+
+  }
+
+);
+
+</script>
+
+</body>
+</html>
